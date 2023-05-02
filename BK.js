@@ -1,5 +1,7 @@
 let campoTexto;
 let resultado;
+let enc;
+
 function Hola(saludo){
     alert(saludo);
 }
@@ -8,13 +10,15 @@ function Hola(saludo){
 function encriptador() {
     campoTexto = document.getElementById("entrada");
     resultado = document.getElementById("resultado");
-    resultado.value = campoTexto.value;
+
+    
+    campoTexto.value = resultado.value;
+    
 }
+//todo
+
 
 function limpiar(){
-    campoTexto.value=" ";
-    resultado.value = " ";
-
-    
-    
+    campoTexto.value="";
+    resultado.value = "";  
 }
