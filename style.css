@@ -1,8 +1,25 @@
-
+body{
+    text-align: center;
+    background-color: #d2edf7;
+    background-position: 50%;
+}
+header{
+    background-color: #96d5ed;
+    margin: 0% ;
+}
+button{
+    
+    text-align: center;
+}
 button:hover{
     padding: 5px ;
     border: 10%;
 }
 textarea{
     border-radius: 5%;
+}
+
+footer{
+    background-color: #96d5ed;
+    margin: 0% ;
 }

@@ -10,7 +10,6 @@ function Hola(saludo){
 function encriptador() {
     campoTexto = document.getElementById("entrada");
     resultado = document.getElementById("resultado");
-
     
     campoTexto.value = resultado.value;
     
