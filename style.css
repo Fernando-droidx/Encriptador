@@ -4,15 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-input[type="text"],input[type="password"]{
-    outline: none ;
-    padding: 20px;
-    display: block;
-    width: 300px ;
-    border-radius: 3px;
-    border: 1px solid #eee;
-    margin: 20px auto;
-}
+
 button{
     padding: 10px;
     color: #fff;
@@ -36,8 +28,11 @@ header{
     width: 100%;
     text-align: center;
 }
-header a{
-   
-    text-decoration: none;
-    color: #333;
+footer{
+    border-bottom: 2px solid #eee;
+    padding: 20 px 0;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
