@@ -3,36 +3,30 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-size: large;
+    
+    
 }
 
 button{
-    padding: 10px;
-    color: #fff;
-    background: #0098cb;
-    width: 320px ;
-    margin: 20px auto;
-    margin-top: 0;
-    border: 0;
+    outline: none ;
+    padding: 20px;
+    display: inline-block;
+    width: 300px ;
     border-radius: 3px;
-    cursor: pointer;
+    border: 1px solid white;
+    margin: 20px auto;
+    background-color: #000080;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
 }
 button:hover{
-     background-color: #00b8eb;
+    background-color: steelblue;
 }
-
-header{
-    border-bottom: 2px solid #eee;
-    padding: 20 px 0;
-    margin: 50px auto;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-footer{
-    border-bottom: 2px solid #eee;
-    padding: 20 px 0;
-    margin: 50px auto;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
+textarea{
+    margin: 0;
+    padding: 150px 100px;
+    font-family: 'Montserrat', sans-serif;
+   
 }
