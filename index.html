@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
-    <script src="BK.js"></script>
+    <script type="text/javascript" src="BK.js"></script>
     <title>Encriptador </title>
 </head>
 <body>
@@ -18,22 +18,23 @@
         <h1>Encriptador</h1>
     </header>
     <main>
-            <textarea  id="resultado" ></textarea>
-            <textarea id="entrada" class="text2"></textarea>
+            <input type="text" id="textoEncriptado">
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>    
         <ul>
-            <button onclick="encriptador()">Encriptador</button>
-            <button onclick="desencriptador()">Desencriptador</button>
-            <button onclick="limpiar()">Limpiar</button>
+            <button type="button" id="botonEncriptado">Encriptador</button>
+            <button type="button"  onclick="desencriptador()" id="botonEncriptado">Desencriptador</button>
+            <button type="button"  onclick="limpiar()"        id="botonDesencriptado">Limpiar</button>
+            <button type="button"                             id="botonCopiar">Copiar</button>
+ 
         </ul>
-        
-        
-        
     </main>
     <footer>
         <h1>Desarrollado por Fernando Ramirez Rivas,  Desde el curso de alura</h1>
     </footer>
     </div>
-    
-    
 </body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick() = encriptar();
+</script>
 </html>
