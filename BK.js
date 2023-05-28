@@ -7,12 +7,12 @@ function Hola(saludo){
 }
 function encriptar(){
    
-    var frase = document.getElementById("inputText").value.toLowerCase();
-    var textoEncriptado = frase.replace(/e/img, "enter");
-    textoEncriptado = textoEncriptado.replace(/o/img, "ober");
-    textoEncriptado = textoEncriptado.replace(/i/img, "imes");
-    textoEncriptado = textoEncriptado.replace(/a/img, "ai");
-    textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
+    var frase = document.getElementById("textoEncriptado").value.toLowerCase();
+    var textoEncriptado = frase.replace(/e/igm, "enter");
+    textoEncriptado = textoEncriptado.replace(/o/igm, "ober");
+    textoEncriptado = textoEncriptado.replace(/i/igm, "imes");
+    textoEncriptado = textoEncriptado.replace(/a/igm, "ai");
+    textoEncriptado = textoEncriptado.replace(/u/igm, "ufat");
 
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
     
