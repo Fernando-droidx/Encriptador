@@ -10,31 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
     <script type="text/javascript" src="BK.js"></script>
-    <title>Encriptador </title>
+    <title>Encriptador</title>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
         <h1>Encriptador</h1>
+        <div class="logo"><img src="imagenes/Vector.svg" alt="Logo"></div>
     </header>
     <main>
-            <input type="text" id="textoEncriptado">
-            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>    
-        <ul>
-            <button type="button" id="botonEncriptado">Encriptador</button>
-            <button type="button"  onclick="desencriptador()" id="botonEncriptado">Desencriptador</button>
-            <button type="button"  onclick="limpiar()"        id="botonDesencriptado">Limpiar</button>
-            <button type="button"                             id="botonCopiar">Copiar</button>
- 
-        </ul>
+        <section>
+            <input class="input-texto" type="text" id="textoEncriptado" placeholder="Ingresa el texto aquí">
+            <div class="botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptado">Desencriptar</button>
+                <button type="button" id="botonLimpiar">Limpiar</button>
+            </div>           
+        </section>
+
+        <section>
+            <textarea class="mensaje" name="resultado" id="textoDesencriptado" cols="18" rows="8"></textarea>
+            <button type="button" id="botonCopiar">Copiar</button>
+        </section>
     </main>
     <footer>
-        <h1>Desarrollado por Fernando Ramirez Rivas,  Desde el curso de alura</h1>
+        <h1>Desarrollado por Fernando Ramirez Rivas desde el curso de Alura</h1>
     </footer>
-    </div>
+
 </body>
 <script>
     var btn = document.querySelector("#botonEncriptado");
     btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptador;
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
 </script>
 </html>

@@ -1,37 +1,124 @@
-
-body{
+* {
+    background: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: large;
-    
-    
+    box-sizing: border-box;
 }
 
-button{
-    outline: none ;
-    padding: 20px;
-    display: inline-block;
-    width: 300px ;
-    border-radius: 3px;
-    border: 1px solid white;
-    margin: 20px auto;
-    background-color: #000080;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: large;
-}
-button:hover{
-    background-color: steelblue;
-}
-textarea{
-    margin: 0;
-    padding: 150px 100px;
-    font-family: 'Montserrat', sans-serif;
+header {
+    display: flex;
    
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF;
+    color: #FFF; /* Cambiado a blanco */
 }
 
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #0A3871; /* Cambiado a blanco */
+    background-color: #FFF;
+}
 
+.logo img {
+    height: 40px;
+}
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
 
+section {
+    margin: 0 20px;
+}
+
+.input-texto {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Agregado */
+}
+
+.botones {
+    display: flex;
+    flex-direction: column; /* Cambiado */
+    margin-top: 10px; /* Ajustado */
+    border: #0A3871;
+}
+
+button {
+    background-color: #FFF;
+    color: #0A3871;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10px; /* Agregado */
+    border: #0A3871;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    resize: none;
+    background-color: #FFF;
+    color: #0A3871;
+    margin-bottom: 20px; /* Aumenta el espaciado inferior del área de texto */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#botonCopiar {
+    position: absolute;
+    bottom: -40px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px; /* Agrega un margen superior al botón */
+    background-color: #0A3871; /* Añade el color de fondo deseado */
+    color: #FFF; /* Añade el color de texto deseado */
+    padding: 10px 20px; /* Ajusta el padding del botón si es necesario */
+    border: none; /* Elimina el borde si no es necesario */
+    border-radius: 8px; /* Añade el radio de borde deseado */
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    background-color: #FFF;
+    color: #FFF; /* Cambiado a blanco */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: 300;
+}
